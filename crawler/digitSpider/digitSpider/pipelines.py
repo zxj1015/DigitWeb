@@ -6,9 +6,9 @@
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 
-class DigitspiderPipeline(object):
+class digitSpiderPipeline(object):
 	def __init__(self):
 		self.file = open('sample.txt', 'wb')
 	def process_item(self, item, spider):
-		self.file.write(item['title'] + '\t' + item['link'] + '\t' + item['desc'] + '\n')
-    return item
+		self.file.write(str(item['title']) + '\t' + str(item['link']) + '\t' + str(item['desc']) + '\n')
+ #return item

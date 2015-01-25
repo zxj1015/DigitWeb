@@ -13,5 +13,9 @@ BOT_NAME = 'digitSpider'
 SPIDER_MODULES = ['digitSpider.spiders']
 NEWSPIDER_MODULE = 'digitSpider.spiders'
 
+ITEM_PIPELINES = [
+	'digitSpider.pipelines.digitSpiderPipeline'
+]
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'digitSpider (+http://www.yourdomain.com)'
